@@ -1,0 +1,19 @@
+﻿@page "/Counter"
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<h1>My Counter</h1>
+
+Welcome to your new app!
+<a href="/">Home</a>
+<p>The count is @count</p>
+<button @onclick="add" class="btn btn-primary">add 1</button>
+
+@code {
+    int count;
+    public void add()
+    {
+        count++;
+    }
+}
